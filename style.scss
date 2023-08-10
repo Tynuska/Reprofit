@@ -1,0 +1,121 @@
+@import 'variables';
+@import 'mixins';
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+@include images;
+@include headers;
+
+body {
+  font-family: $font-family;
+  background-color: #f9f4f8;
+  font-size: 18px;
+}
+
+.container {
+  width: 1216px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//header
+.header {
+  background-image: url(./img/Hero.png);
+  background-size: cover;
+  position: relative;
+}
+
+.header__left {
+  width: 50%;
+}
+
+.header__right {
+  width: 340px;
+  position: absolute;
+  top: 0;
+  right: 250px;
+  div {
+    padding: 17px 35px;
+    background: #f9f4f8;
+  }
+}
+
+.header__doctor {
+  width: 340px;
+  max-width: 100%;
+}
+
+h1 {
+  opacity: 1;
+  color: $primary-color;
+  font-size: 90px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 104px;
+}
+
+.header__text {
+  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Gilroy-Regular';
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 40px;
+}
+
+.main-button {
+  @include button;
+}
+
+.main-button__pink {
+  background-color: $secondary-color;
+}
+
+.main-button__blue {
+  background-color: $primary-color;
+}
+.flex {
+  @include flex;
+}
+
+//proc
+.proc {
+  text-align: center;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    p {
+      @include text-strong;
+    }
+  }
+}
+
+.reseni {
+  text-align: center;
+  div div {
+    @include text-strong;
+  }
+}

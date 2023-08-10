@@ -1,0 +1,14 @@
+@import "variables";
+/* @mixin */
+
+h1 {
+  opacity: 1;
+  color: rgba(10, 102, 123, 1);
+  font-family: "Gilroy-Bold";
+  font-size: 90px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 104px;
+}
