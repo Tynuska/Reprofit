@@ -25,16 +25,53 @@ body {
 body {
   font-family: $font-family;
   background-color: #f9f4f8;
-  font-size: 18px;
+  font-size: $font-size;
   color: $text-color;
   line-height: $line-height;
 }
 
 .container {
-  // width: 1216px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+//top
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin: 15px 0 20px;
+  .top__logo {
+    width: 8rem;
+  }
+  span {
+    @include text-strong;
+  }
+}
+
+// menu
+.menu {
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 7em;
+  margin: 1.5em auto;
+
+  &:hover {
+    background-color: #f9f4f8;
+  }
+  a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
 }
 
 //header
@@ -43,15 +80,15 @@ body {
   margin-bottom: $bottom-section;
   // background-image: url(./img/Hero.png);
   // background-size: cover;
-  //   position: relative;
+  // position: relative;
 }
 
 .header__left {
   text-align: center;
   .header__text {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 400;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
     line-height: $line-height;
   }
 }
@@ -130,13 +167,13 @@ body {
   margin-bottom: $bottom-section;
   .reseni__text {
     @include text-p;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 
   .reseni__flex {
     @include flex;
     img {
-      margin-bottom: 30px;
+      padding-bottom: 25px;
     }
   }
   div div {

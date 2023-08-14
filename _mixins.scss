@@ -3,11 +3,11 @@
     opacity: 1;
     color: rgba(10, 102, 123, 1);
     font-family: 'Gilroy-Bold';
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: $line-height;
   }
 
@@ -15,9 +15,9 @@
     color: $primary-color;
     font-weight: 700;
     letter-spacing: 0px;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     line-height: $line-height;
   }
 
@@ -25,9 +25,9 @@
     color: $primary-color;
     font-weight: 700;
     letter-spacing: 0px;
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     $line-height: 110%;
   }
 }
@@ -68,7 +68,7 @@
 
 @mixin text-strong {
   color: $primary-color;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0px;
