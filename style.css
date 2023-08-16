@@ -17,6 +17,13 @@ body {
   box-sizing: border-box;
 }
 
+@media screen and (min-width: 740px) {
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25%;
+  }
+}
 img {
   max-width: 50%;
   height: auto;
@@ -31,7 +38,6 @@ h1 {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0px;
-  margin-bottom: 15px;
   line-height: 100%;
 }
 
@@ -77,15 +83,24 @@ body {
 .top .top__logo {
   width: 8rem;
 }
-.top span {
+.top .top__right {
   color: #0a667b;
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
+@media screen and (min-width: 740px) {
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .menu {
   background-color: #fff;
   border-radius: 15px;
@@ -107,34 +122,44 @@ body {
   color: #d6368c;
 }
 
+@media screen and (min-width: 740px) {
+  .menu {
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 }
 
 .header__left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
   text-align: center;
 }
 .header__left .header__text {
   font-size: 18px;
   font-weight: 400;
-  padding-bottom: 35px;
   line-height: 110%;
 }
 
 .header__right {
   text-align: center;
-  width: 340px;
   margin: 0 auto;
 }
 .header__right img {
   border-radius: 15% 15% 0 0;
+  max-width: 100%;
 }
 .header__right div {
-  padding: 17px 35px;
+  padding: 1rem 1rem 0;
   background: #f9f4f8;
 }
 .header__right div p {
@@ -168,7 +193,7 @@ body {
 
 .proc {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 }
 .proc .proc__text {
   color: #000000;
@@ -178,14 +203,11 @@ body {
   text-align: center;
   line-height: 110%;
   padding-bottom: 23px;
-  padding-bottom: 5px;
 }
 
 .grid {
   display: grid;
-}
-.grid .grid__item {
-  padding-bottom: 15px;
+  gap: 15px;
 }
 .grid .grid__item p {
   color: #0a667b;
@@ -200,9 +222,19 @@ body {
   padding-bottom: 10px;
 }
 
+@media screen and (min-width: 740px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .grid .grid__item img {
+    width: 15%;
+  }
+}
 .reseni {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
 }
 .reseni .reseni__text {
   color: #000000;
@@ -231,13 +263,21 @@ body {
   padding-bottom: 25px;
 }
 
+@media screen and (min-width: 740px) {
+  .reseni .reseni__flex {
+    flex-direction: row;
+  }
+}
 .prvni-krok {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 55px;
+  background: #fff;
+  padding: 20px 0;
+  border-radius: 15%;
 }
 .prvni-krok .krok__text {
   color: #000000;
@@ -266,6 +306,18 @@ body {
   line-height: 110%;
 }
 .vybralo .vybralo__flex--reverse {
-  margin-bottom: 35px;
+  margin-bottom: 55px;
   flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 740px) {
+  .vybralo {
+    text-align: center;
+  }
+  .vybralo .vybralo__flex {
+    flex-direction: row;
+  }
+  .vybralo .vybralo__flex .vybralo__flex--mob p {
+    padding-bottom: 45px;
+  }
 }/*# sourceMappingURL=style.css.map */

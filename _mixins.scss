@@ -7,7 +7,6 @@
     font-weight: 700;
     font-style: normal;
     letter-spacing: 0px;
-    margin-bottom: 15px;
     line-height: 100%;
   }
 
@@ -34,6 +33,14 @@
 @mixin images {
   img {
     max-width: 50%;
+    height: auto;
+    border-radius: 25%;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  img {
+    max-width: 100%;
     height: auto;
     border-radius: 25%;
   }
